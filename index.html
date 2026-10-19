@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relações Humanas no Trabalho | Apresentações</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <!-- Troque banner.png pela sua imagem (proporção 8:1, ex.: 1680 x 210 px) -->
+    <img src="banner.png" alt="Relações Humanas no Trabalho" width="830" height="100">
+  </header>
+
+  <main class="conteudo">
+    <section class="intro">
+      <h1>Apresentações</h1>
+      <p class="contagem" id="contagem" aria-live="polite">Carregando apresentações...</p>
+    </section>
+
+    <section class="filtros" aria-label="Filtros">
+      <label class="busca">
+        <span class="sr-only">Buscar apresentação</span>
+        <input type="search" id="busca" placeholder="Buscar pelo nome da apresentação" autocomplete="off">
+      </label>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por tema"></div>
+    </section>
+
+    <section class="grade" id="grade" aria-busy="true"></section>
+    <div class="aviso" id="aviso" hidden></div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
